@@ -391,10 +391,148 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Je0qX2D-ZEIufp0S2CUW" name="3. View RERI Dashboard">
-    <mxGraphModel dx="901" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1060" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-1" parent="1" style="swimlane;html=1;startSize=32;horizontal=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontStyle=1;fontSize=14;fontColor=#000000;" value="Regional Government" vertex="1">
+          <mxGeometry height="1189" width="290" x="324" y="391" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-50" connectable="0" parent="qKAsbnhOnnBVgMhwAAbo-1" style="group" value="" vertex="1">
+          <mxGeometry height="34" width="34" x="128" y="1129" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-22" parent="qKAsbnhOnnBVgMhwAAbo-50" style="ellipse;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;container=0;" vertex="1">
+          <mxGeometry height="34" width="34" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-23" parent="qKAsbnhOnnBVgMhwAAbo-50" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;container=0;" vertex="1">
+          <mxGeometry height="18" width="18" x="8" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-2" parent="1" style="swimlane;html=1;startSize=32;horizontal=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontStyle=1;fontSize=14;fontColor=#000000;" value="System" vertex="1">
+          <mxGeometry height="1189" width="380" x="614" y="391" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-3" parent="1" style="swimlane;html=1;startSize=32;horizontal=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontStyle=1;fontSize=14;fontColor=#000000;" value="Database" vertex="1">
+          <mxGeometry height="1189" width="330" x="994" y="391" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-4" parent="1" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="28" width="28" x="455" y="437" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Open RERI dashboard (after login)" vertex="1">
+          <mxGeometry height="52" width="210" x="364" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Get managed region (daerah_id)" vertex="1">
+          <mxGeometry height="52" width="210" x="699" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Read users" vertex="1">
+          <mxGeometry height="52" width="180" x="1069" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Retrieve region RERI score, 7 pillars &amp;amp; rank" vertex="1">
+          <mxGeometry height="52" width="220" x="694" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Read reri_scores" vertex="1">
+          <mxGeometry height="52" width="180" x="1069" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Retrieve AI insight &amp;amp; recommendations" vertex="1">
+          <mxGeometry height="52" width="220" x="694" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Read daerah_insights &amp;amp; rekomendasi" vertex="1">
+          <mxGeometry height="52" width="210" x="1054" y="725" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Retrieve cluster &amp;amp; peer regions" vertex="1">
+          <mxGeometry height="52" width="220" x="694" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Read daerah_clusters" vertex="1">
+          <mxGeometry height="52" width="180" x="1069" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Compute pillar gap analysis (vs peers)" vertex="1">
+          <mxGeometry height="52" width="220" x="694" y="945" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Display dashboard: score, radar, pillar gap, priority recommendations, cluster position, peer comparison" vertex="1">
+          <mxGeometry height="100" width="240" x="684" y="1046" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Review region readiness &amp;amp; priorities" vertex="1">
+          <mxGeometry height="60" width="200" x="369" y="1066" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-17" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;" value="Compare with another region?" vertex="1">
+          <mxGeometry height="90" width="180" x="379" y="1196" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Select comparison region" vertex="1">
+          <mxGeometry height="50" width="190" x="374" y="1336" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Display side-by-side comparison" vertex="1">
+          <mxGeometry height="60" width="210" x="699" y="1331" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Read reri_scores of selected region" vertex="1">
+          <mxGeometry height="60" width="210" x="1054" y="1331" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-49" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-21" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="36" width="36" x="451" y="1453" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-24" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" target="qKAsbnhOnnBVgMhwAAbo-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-25" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-26" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-27" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-28" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-29" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-30" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-31" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-32" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-33" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-34" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-35" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-36" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-37" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-18" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-38" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-39" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-40" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-21" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="804" y="1471" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qKAsbnhOnnBVgMhwAAbo-41" edge="1" parent="1" source="qKAsbnhOnnBVgMhwAAbo-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="qKAsbnhOnnBVgMhwAAbo-21" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="342" y="1241" />
+              <mxPoint x="342" y="1471" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
