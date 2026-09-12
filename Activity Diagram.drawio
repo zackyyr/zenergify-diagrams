@@ -1,10 +1,10 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="2">
   <diagram id="lkbu8CRMxfAj0q2ud_Fa" name="Register - Login">
-    <mxGraphModel dx="1060" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1502" dy="1143" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="c-fGuFflQG-d2UpDduxE-1" parent="1" style="swimlane;html=1;startSize=32;horizontal=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontStyle=1;fontSize=14;fontColor=#000000;" value="Pengguna" vertex="1">
+        <mxCell id="c-fGuFflQG-d2UpDduxE-1" parent="1" style="swimlane;html=1;startSize=32;horizontal=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontStyle=1;fontSize=14;fontColor=#000000;" value="Users" vertex="1">
           <mxGeometry height="1647" width="310" x="762" y="423" as="geometry" />
         </mxCell>
         <mxCell id="c-fGuFflQG-d2UpDduxE-14" parent="c-fGuFflQG-d2UpDduxE-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Fill in data (name, email password)" vertex="1">
@@ -25,7 +25,7 @@
         <mxCell id="c-fGuFflQG-d2UpDduxE-48" edge="1" parent="c-fGuFflQG-d2UpDduxE-1" source="c-fGuFflQG-d2UpDduxE-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=block;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" target="c-fGuFflQG-d2UpDduxE-22" value="Reg. Government">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="c-fGuFflQG-d2UpDduxE-2" parent="1" style="swimlane;html=1;startSize=32;horizontal=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontStyle=1;fontSize=14;fontColor=#000000;" value="Sistem" vertex="1">
+        <mxCell id="c-fGuFflQG-d2UpDduxE-2" parent="1" style="swimlane;html=1;startSize=32;horizontal=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontStyle=1;fontSize=14;fontColor=#000000;" value="System" vertex="1">
           <mxGeometry height="1647" width="400" x="1072" y="423" as="geometry" />
         </mxCell>
         <mxCell id="c-fGuFflQG-d2UpDduxE-8" parent="c-fGuFflQG-d2UpDduxE-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Verifying Credentials" vertex="1">
