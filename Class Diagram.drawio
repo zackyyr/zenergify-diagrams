@@ -1,9 +1,1197 @@
-<mxfile host="app.diagrams.net">
-  <diagram name="Page-1" id="HAJlyvH0KfvL4ZrSTz_6">
-    <mxGraphModel dx="1645" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="2">
+  <diagram name="Class Diagram" id="class_diagram">
+    <mxGraphModel dx="3800" dy="2324" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="1320" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="C1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;Daerah&lt;/b&gt;" vertex="1">
+          <mxGeometry height="270" width="240" x="520" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R2" parent="C1" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R3" parent="C1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R4" parent="C1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- nama: String" vertex="1">
+          <mxGeometry height="20" width="240" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R5" parent="C1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kodeBps: String" vertex="1">
+          <mxGeometry height="20" width="240" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="R6" parent="C1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- slug: String" vertex="1">
+          <mxGeometry height="20" width="240" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="R7" parent="C1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- tipe: DaerahTipe" vertex="1">
+          <mxGeometry height="20" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="R8" parent="C1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- provinsiId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="R9" parent="C1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- latitude: Double" vertex="1">
+          <mxGeometry height="20" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="R10" parent="C1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- longitude: Double" vertex="1">
+          <mxGeometry height="20" width="240" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="R11" parent="C1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- populasi: Integer" vertex="1">
+          <mxGeometry height="20" width="240" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="R12" parent="C1" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="R13" parent="C1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ getChildren(): Daerah[]" vertex="1">
+          <mxGeometry height="20" width="240" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="R14" parent="C1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ getProvince(): Daerah" vertex="1">
+          <mxGeometry height="20" width="240" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="C15" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;ReriScore&lt;/b&gt;" vertex="1">
+          <mxGeometry height="310" width="260" x="-240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R16" parent="C15" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R17" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R18" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R19" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- renewableEnergyAdoption: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="R20" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- energyEfficiency: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="R21" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- greenInfrastructure: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="R22" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- policyGovernance: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="R23" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- investmentFinancing: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="R24" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- innovationSmartgrid: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="R25" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- communityParticipation: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="R26" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- totalScore: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="R27" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- category: ReriCategory" vertex="1">
+          <mxGeometry height="20" width="260" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="R28" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- rank: Integer" vertex="1">
+          <mxGeometry height="20" width="260" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="R29" parent="C15" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="R30" parent="C15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ getPillars(): Double[]" vertex="1">
+          <mxGeometry height="20" width="260" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="C31" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=16;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;Indikator&lt;/b&gt;" vertex="1">
+          <mxGeometry height="232" width="240" x="-9" y="379" as="geometry" />
+        </mxCell>
+        <mxCell id="R32" parent="C31" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="R33" parent="C31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kode: String" vertex="1">
+          <mxGeometry height="20" width="240" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="R34" parent="C31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- pilarKode: String" vertex="1">
+          <mxGeometry height="20" width="240" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="R35" parent="C31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- nama: String" vertex="1">
+          <mxGeometry height="20" width="240" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="R36" parent="C31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- satuan: String" vertex="1">
+          <mxGeometry height="20" width="240" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="R37" parent="C31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- arah: String" vertex="1">
+          <mxGeometry height="20" width="240" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="R38" parent="C31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- bobotDalamPilar: Double" vertex="1">
+          <mxGeometry height="20" width="240" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="R39" parent="C31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- bobotPilar: Double" vertex="1">
+          <mxGeometry height="20" width="240" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="R40" parent="C31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kolomSumber: String" vertex="1">
+          <mxGeometry height="20" width="240" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="R41" parent="C31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- urutan: Integer" vertex="1">
+          <mxGeometry height="20" width="240" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="R42" parent="C31" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="R43" parent="C31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ isPositive(): Boolean" vertex="1">
+          <mxGeometry height="20" width="240" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="C44" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;IndikatorNilai&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="230" x="320" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="R45" parent="C44" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R46" parent="C44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="230" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R47" parent="C44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="230" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R48" parent="C44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- indikatorKode: String" vertex="1">
+          <mxGeometry height="20" width="230" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="R49" parent="C44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- nilaiMentah: Double" vertex="1">
+          <mxGeometry height="20" width="230" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="R50" parent="C44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- nilaiSkor: Double" vertex="1">
+          <mxGeometry height="20" width="230" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="R51" parent="C44" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="R52" parent="C44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ normalize(): Double" vertex="1">
+          <mxGeometry height="20" width="230" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="C53" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;DaerahCluster&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="230" x="686" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="R54" parent="C53" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R55" parent="C53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="230" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R56" parent="C53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="230" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R57" parent="C53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- clusterId: Short" vertex="1">
+          <mxGeometry height="20" width="230" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="R58" parent="C53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- clusterLabel: String" vertex="1">
+          <mxGeometry height="20" width="230" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="R59" parent="C53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kValue: Short" vertex="1">
+          <mxGeometry height="20" width="230" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="R60" parent="C53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- computedAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="230" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="R61" parent="C53" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="C62" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;DaerahInsight&lt;/b&gt;" vertex="1">
+          <mxGeometry height="210" width="240" x="895" y="-134" as="geometry" />
+        </mxCell>
+        <mxCell id="R63" parent="C62" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R64" parent="C62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R65" parent="C62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R66" parent="C62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- summary: String" vertex="1">
+          <mxGeometry height="20" width="240" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="R67" parent="C62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- strengths: JSON" vertex="1">
+          <mxGeometry height="20" width="240" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="R68" parent="C62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- concerns: JSON" vertex="1">
+          <mxGeometry height="20" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="R69" parent="C62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- recommendations: JSON" vertex="1">
+          <mxGeometry height="20" width="240" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="R70" parent="C62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- modelUsed: String" vertex="1">
+          <mxGeometry height="20" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="R71" parent="C62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- generatedAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="240" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="R72" parent="C62" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="C73" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;Rekomendasi&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="240" x="1182" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="R74" parent="C73" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R75" parent="C73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R76" parent="C73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R77" parent="C73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- namaAksi: String" vertex="1">
+          <mxGeometry height="20" width="240" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="R78" parent="C73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- deskripsi: String" vertex="1">
+          <mxGeometry height="20" width="240" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="R79" parent="C73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- horizon: Horizon" vertex="1">
+          <mxGeometry height="20" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="R80" parent="C73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- createdAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="240" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="R81" parent="C73" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="C82" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;User&lt;/b&gt;" vertex="1">
+          <mxGeometry height="230" width="240" x="1525" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R83" parent="C82" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R84" parent="C82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R85" parent="C82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- nama: String" vertex="1">
+          <mxGeometry height="20" width="240" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R86" parent="C82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- email: String" vertex="1">
+          <mxGeometry height="20" width="240" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="R87" parent="C82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- role: UserRole" vertex="1">
+          <mxGeometry height="20" width="240" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="R88" parent="C82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- status: UserStatus" vertex="1">
+          <mxGeometry height="20" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="R89" parent="C82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="R90" parent="C82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- onboardingData: JSON" vertex="1">
+          <mxGeometry height="20" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="R91" parent="C82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- createdAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="240" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="R92" parent="C82" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="R93" parent="C82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ isAdmin(): Boolean" vertex="1">
+          <mxGeometry height="20" width="240" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="C94" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;Proyek&lt;/b&gt;" vertex="1">
+          <mxGeometry height="210" width="240" x="1377" y="539" as="geometry" />
+        </mxCell>
+        <mxCell id="R95" parent="C94" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R96" parent="C94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R97" parent="C94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R98" parent="C94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- developerId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="R99" parent="C94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- namaProyek: String" vertex="1">
+          <mxGeometry height="20" width="240" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="R100" parent="C94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- jenis: String" vertex="1">
+          <mxGeometry height="20" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="R101" parent="C94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kapasitas: Double" vertex="1">
+          <mxGeometry height="20" width="240" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="R102" parent="C94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- status: ProjectStatus" vertex="1">
+          <mxGeometry height="20" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="R103" parent="C94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- createdAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="240" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="R104" parent="C94" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="C105" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;UatResponse&lt;/b&gt;" vertex="1">
+          <mxGeometry height="150" width="230" x="978" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="R106" parent="C105" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R107" parent="C105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="230" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R108" parent="C105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- peran: String" vertex="1">
+          <mxGeometry height="20" width="230" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R109" parent="C105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- answers: JSON" vertex="1">
+          <mxGeometry height="20" width="230" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="R110" parent="C105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- saran: String" vertex="1">
+          <mxGeometry height="20" width="230" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="R111" parent="C105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- createdAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="230" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="R112" parent="C105" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="C113" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&amp;laquo;service&amp;raquo;&lt;br&gt;&lt;b&gt;AuthService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="260" x="1604" y="829" as="geometry" />
+        </mxCell>
+        <mxCell id="R114" parent="C113" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R115" parent="C113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- currentUser: User" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R116" parent="C113" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R117" parent="C113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ register(data): User" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R118" parent="C113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ login(email, pass): Session" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="R119" parent="C113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ getCurrentUser(): User" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="R120" parent="C113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ checkAccess(role, perm): Boolean" vertex="1">
+          <mxGeometry height="20" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="R121" parent="C113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ verifyUser(userId): void" vertex="1">
+          <mxGeometry height="20" width="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="C122" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&amp;laquo;service&amp;raquo;&lt;br&gt;&lt;b&gt;ReriService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="150" width="270" x="300" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="R123" parent="C122" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R124" parent="C122" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- pillarWeights: Map" vertex="1">
+          <mxGeometry height="20" width="270" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R125" parent="C122" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R126" parent="C122" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ calculateReri(pillars): Double" vertex="1">
+          <mxGeometry height="20" width="270" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R127" parent="C122" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ categorize(score): ReriCategory" vertex="1">
+          <mxGeometry height="20" width="270" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="R128" parent="C122" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ normalizeIndicator(val): Double" vertex="1">
+          <mxGeometry height="20" width="270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="R129" parent="C122" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ recomputeScore(daerahId): ReriScore" vertex="1">
+          <mxGeometry height="20" width="270" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="C130" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&amp;laquo;service&amp;raquo;&lt;br&gt;&lt;b&gt;ClusteringService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="150" width="270" x="666" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="R131" parent="C130" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R132" parent="C130" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kRange: Integer[]" vertex="1">
+          <mxGeometry height="20" width="270" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R133" parent="C130" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R134" parent="C130" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ runKMeans(k): DaerahCluster[]" vertex="1">
+          <mxGeometry height="20" width="270" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R135" parent="C130" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ silhouetteScore(labels): Double" vertex="1">
+          <mxGeometry height="20" width="270" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="R136" parent="C130" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ determineOptimalK(): Integer" vertex="1">
+          <mxGeometry height="20" width="270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="R137" parent="C130" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ standardize(data): Double[]" vertex="1">
+          <mxGeometry height="20" width="270" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="C138" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&amp;laquo;service&amp;raquo;&lt;br&gt;&lt;b&gt;InsightService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="130" width="260" x="1200" y="-94" as="geometry" />
+        </mxCell>
+        <mxCell id="R139" parent="C138" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R140" parent="C138" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- model: String" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R141" parent="C138" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R142" parent="C138" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ generateInsight(daerah): DaerahInsight" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R143" parent="C138" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ buildPrompt(daerah): String" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="R144" parent="C138" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ saveInsight(insight): void" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="C145" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&amp;laquo;service&amp;raquo;&lt;br&gt;&lt;b&gt;RecommendationService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="130" width="270" x="1167" y="809" as="geometry" />
+        </mxCell>
+        <mxCell id="R146" parent="C145" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R147" parent="C145" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- membershipFn: Function" vertex="1">
+          <mxGeometry height="20" width="270" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="R148" parent="C145" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="R149" parent="C145" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ generateRecommendations(pillars): Rekomendasi[]" vertex="1">
+          <mxGeometry height="20" width="270" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R150" parent="C145" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ computeUrgency(score, weight): Double" vertex="1">
+          <mxGeometry height="20" width="270" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="R151" parent="C145" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ mapHorizon(urgency): Horizon" vertex="1">
+          <mxGeometry height="20" width="270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="E152" edge="1" parent="1" source="C1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="C15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L153" connectable="0" parent="E152" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L154" connectable="0" parent="E152" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E155" edge="1" parent="1" source="C1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="C53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L156" connectable="0" parent="E155" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L157" connectable="0" parent="E155" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E158" edge="1" parent="1" source="R4" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" target="C62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L159" connectable="0" parent="E158" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L160" connectable="0" parent="E158" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E161" edge="1" parent="1" source="C1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="C73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L162" connectable="0" parent="E161" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint x="-2" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L163" connectable="0" parent="E161" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E164" edge="1" parent="1" source="C1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="C94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L165" connectable="0" parent="E164" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L166" connectable="0" parent="E164" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E167" edge="1" parent="1" source="C1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="C82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L168" connectable="0" parent="E167" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint x="4" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L169" connectable="0" parent="E167" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E170" edge="1" parent="1" source="C1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="C44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L171" connectable="0" parent="E170" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L172" connectable="0" parent="E170" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E173" edge="1" parent="1" source="C31" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="C44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L174" connectable="0" parent="E173" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L175" connectable="0" parent="E173" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E176" edge="1" parent="1" source="C82" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="C94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L177" connectable="0" parent="E176" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L178" connectable="0" parent="E176" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E179" edge="1" parent="1" source="C113" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="C82">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1725.15" y="852" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E180" edge="1" parent="1" source="C122" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="C15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E181" edge="1" parent="1" source="C122" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="C44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E182" edge="1" parent="1" source="C130" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="C53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E183" edge="1" parent="1" source="C138" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="C62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E184" edge="1" parent="1" source="C145" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="C73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="t6kQyz_uVlJs_r7dui0R" name="Page-2">
+    <mxGraphModel dx="1175" dy="502" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;Daerah&lt;/b&gt;" vertex="1">
+          <mxGeometry height="270" width="240" x="875" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-2" parent="dlzl4phaTksQBU6d1Fy0-1" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-3" parent="dlzl4phaTksQBU6d1Fy0-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-4" parent="dlzl4phaTksQBU6d1Fy0-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- nama: String" vertex="1">
+          <mxGeometry height="20" width="240" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-5" parent="dlzl4phaTksQBU6d1Fy0-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kodeBps: String" vertex="1">
+          <mxGeometry height="20" width="240" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-6" parent="dlzl4phaTksQBU6d1Fy0-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- slug: String" vertex="1">
+          <mxGeometry height="20" width="240" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-7" parent="dlzl4phaTksQBU6d1Fy0-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- tipe: DaerahTipe" vertex="1">
+          <mxGeometry height="20" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-8" parent="dlzl4phaTksQBU6d1Fy0-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- provinsiId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-9" parent="dlzl4phaTksQBU6d1Fy0-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- latitude: Double" vertex="1">
+          <mxGeometry height="20" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-10" parent="dlzl4phaTksQBU6d1Fy0-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- longitude: Double" vertex="1">
+          <mxGeometry height="20" width="240" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-11" parent="dlzl4phaTksQBU6d1Fy0-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- populasi: Integer" vertex="1">
+          <mxGeometry height="20" width="240" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-12" parent="dlzl4phaTksQBU6d1Fy0-1" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-13" parent="dlzl4phaTksQBU6d1Fy0-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ getChildren(): Daerah[]" vertex="1">
+          <mxGeometry height="20" width="240" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-14" parent="dlzl4phaTksQBU6d1Fy0-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ getProvince(): Daerah" vertex="1">
+          <mxGeometry height="20" width="240" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-15" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;ReriScore&lt;/b&gt;" vertex="1">
+          <mxGeometry height="310" width="260" x="415" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-16" parent="dlzl4phaTksQBU6d1Fy0-15" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-17" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-18" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-19" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- renewableEnergyAdoption: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-20" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- energyEfficiency: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-21" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- greenInfrastructure: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-22" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- policyGovernance: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-23" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- investmentFinancing: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-24" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- innovationSmartgrid: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-25" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- communityParticipation: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-26" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- totalScore: Double" vertex="1">
+          <mxGeometry height="20" width="260" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-27" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- category: ReriCategory" vertex="1">
+          <mxGeometry height="20" width="260" y="242" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-28" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- rank: Integer" vertex="1">
+          <mxGeometry height="20" width="260" y="262" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-29" parent="dlzl4phaTksQBU6d1Fy0-15" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="282" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-30" parent="dlzl4phaTksQBU6d1Fy0-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ getPillars(): Double[]" vertex="1">
+          <mxGeometry height="20" width="260" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-31" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;Indikator&lt;/b&gt;" vertex="1">
+          <mxGeometry height="250" width="240" x="415" y="833" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-32" parent="dlzl4phaTksQBU6d1Fy0-31" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-33" parent="dlzl4phaTksQBU6d1Fy0-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kode: String" vertex="1">
+          <mxGeometry height="20" width="240" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-34" parent="dlzl4phaTksQBU6d1Fy0-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- pilarKode: String" vertex="1">
+          <mxGeometry height="20" width="240" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-35" parent="dlzl4phaTksQBU6d1Fy0-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- nama: String" vertex="1">
+          <mxGeometry height="20" width="240" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-36" parent="dlzl4phaTksQBU6d1Fy0-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- satuan: String" vertex="1">
+          <mxGeometry height="20" width="240" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-37" parent="dlzl4phaTksQBU6d1Fy0-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- arah: String" vertex="1">
+          <mxGeometry height="20" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-38" parent="dlzl4phaTksQBU6d1Fy0-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- bobotDalamPilar: Double" vertex="1">
+          <mxGeometry height="20" width="240" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-39" parent="dlzl4phaTksQBU6d1Fy0-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- bobotPilar: Double" vertex="1">
+          <mxGeometry height="20" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-40" parent="dlzl4phaTksQBU6d1Fy0-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kolomSumber: String" vertex="1">
+          <mxGeometry height="20" width="240" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-41" parent="dlzl4phaTksQBU6d1Fy0-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- urutan: Integer" vertex="1">
+          <mxGeometry height="20" width="240" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-42" parent="dlzl4phaTksQBU6d1Fy0-31" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-43" parent="dlzl4phaTksQBU6d1Fy0-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ isPositive(): Boolean" vertex="1">
+          <mxGeometry height="20" width="240" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-44" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;IndikatorNilai&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="230" x="695" y="833" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-45" parent="dlzl4phaTksQBU6d1Fy0-44" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-46" parent="dlzl4phaTksQBU6d1Fy0-44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="230" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-47" parent="dlzl4phaTksQBU6d1Fy0-44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="230" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-48" parent="dlzl4phaTksQBU6d1Fy0-44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- indikatorKode: String" vertex="1">
+          <mxGeometry height="20" width="230" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-49" parent="dlzl4phaTksQBU6d1Fy0-44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- nilaiMentah: Double" vertex="1">
+          <mxGeometry height="20" width="230" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-50" parent="dlzl4phaTksQBU6d1Fy0-44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- nilaiSkor: Double" vertex="1">
+          <mxGeometry height="20" width="230" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-51" parent="dlzl4phaTksQBU6d1Fy0-44" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-52" parent="dlzl4phaTksQBU6d1Fy0-44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ normalize(): Double" vertex="1">
+          <mxGeometry height="20" width="230" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-53" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;DaerahCluster&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="230" x="1165" y="833" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-54" parent="dlzl4phaTksQBU6d1Fy0-53" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-55" parent="dlzl4phaTksQBU6d1Fy0-53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="230" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-56" parent="dlzl4phaTksQBU6d1Fy0-53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="230" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-57" parent="dlzl4phaTksQBU6d1Fy0-53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- clusterId: Short" vertex="1">
+          <mxGeometry height="20" width="230" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-58" parent="dlzl4phaTksQBU6d1Fy0-53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- clusterLabel: String" vertex="1">
+          <mxGeometry height="20" width="230" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-59" parent="dlzl4phaTksQBU6d1Fy0-53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kValue: Short" vertex="1">
+          <mxGeometry height="20" width="230" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-60" parent="dlzl4phaTksQBU6d1Fy0-53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- computedAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="230" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-61" parent="dlzl4phaTksQBU6d1Fy0-53" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-62" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;DaerahInsight&lt;/b&gt;" vertex="1">
+          <mxGeometry height="210" width="240" x="1165" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-63" parent="dlzl4phaTksQBU6d1Fy0-62" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-64" parent="dlzl4phaTksQBU6d1Fy0-62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-65" parent="dlzl4phaTksQBU6d1Fy0-62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-66" parent="dlzl4phaTksQBU6d1Fy0-62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- summary: String" vertex="1">
+          <mxGeometry height="20" width="240" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-67" parent="dlzl4phaTksQBU6d1Fy0-62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- strengths: JSON" vertex="1">
+          <mxGeometry height="20" width="240" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-68" parent="dlzl4phaTksQBU6d1Fy0-62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- concerns: JSON" vertex="1">
+          <mxGeometry height="20" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-69" parent="dlzl4phaTksQBU6d1Fy0-62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- recommendations: JSON" vertex="1">
+          <mxGeometry height="20" width="240" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-70" parent="dlzl4phaTksQBU6d1Fy0-62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- modelUsed: String" vertex="1">
+          <mxGeometry height="20" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-71" parent="dlzl4phaTksQBU6d1Fy0-62" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- generatedAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="240" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-72" parent="dlzl4phaTksQBU6d1Fy0-62" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-73" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;Rekomendasi&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="240" x="1165" y="653" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-74" parent="dlzl4phaTksQBU6d1Fy0-73" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-75" parent="dlzl4phaTksQBU6d1Fy0-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-76" parent="dlzl4phaTksQBU6d1Fy0-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-77" parent="dlzl4phaTksQBU6d1Fy0-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- namaAksi: String" vertex="1">
+          <mxGeometry height="20" width="240" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-78" parent="dlzl4phaTksQBU6d1Fy0-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- deskripsi: String" vertex="1">
+          <mxGeometry height="20" width="240" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-79" parent="dlzl4phaTksQBU6d1Fy0-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- horizon: Horizon" vertex="1">
+          <mxGeometry height="20" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-80" parent="dlzl4phaTksQBU6d1Fy0-73" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- createdAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="240" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-81" parent="dlzl4phaTksQBU6d1Fy0-73" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-82" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;User&lt;/b&gt;" vertex="1">
+          <mxGeometry height="230" width="240" x="1455" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-83" parent="dlzl4phaTksQBU6d1Fy0-82" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-84" parent="dlzl4phaTksQBU6d1Fy0-82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-85" parent="dlzl4phaTksQBU6d1Fy0-82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- nama: String" vertex="1">
+          <mxGeometry height="20" width="240" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-86" parent="dlzl4phaTksQBU6d1Fy0-82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- email: String" vertex="1">
+          <mxGeometry height="20" width="240" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-87" parent="dlzl4phaTksQBU6d1Fy0-82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- role: UserRole" vertex="1">
+          <mxGeometry height="20" width="240" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-88" parent="dlzl4phaTksQBU6d1Fy0-82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- status: UserStatus" vertex="1">
+          <mxGeometry height="20" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-89" parent="dlzl4phaTksQBU6d1Fy0-82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-90" parent="dlzl4phaTksQBU6d1Fy0-82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- onboardingData: JSON" vertex="1">
+          <mxGeometry height="20" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-91" parent="dlzl4phaTksQBU6d1Fy0-82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- createdAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="240" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-92" parent="dlzl4phaTksQBU6d1Fy0-82" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-93" parent="dlzl4phaTksQBU6d1Fy0-82" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ isAdmin(): Boolean" vertex="1">
+          <mxGeometry height="20" width="240" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-94" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;Proyek&lt;/b&gt;" vertex="1">
+          <mxGeometry height="210" width="240" x="1800" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-95" parent="dlzl4phaTksQBU6d1Fy0-94" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-96" parent="dlzl4phaTksQBU6d1Fy0-94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-97" parent="dlzl4phaTksQBU6d1Fy0-94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- daerahId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-98" parent="dlzl4phaTksQBU6d1Fy0-94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- developerId: UUID" vertex="1">
+          <mxGeometry height="20" width="240" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-99" parent="dlzl4phaTksQBU6d1Fy0-94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- namaProyek: String" vertex="1">
+          <mxGeometry height="20" width="240" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-100" parent="dlzl4phaTksQBU6d1Fy0-94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- jenis: String" vertex="1">
+          <mxGeometry height="20" width="240" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-101" parent="dlzl4phaTksQBU6d1Fy0-94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kapasitas: Double" vertex="1">
+          <mxGeometry height="20" width="240" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-102" parent="dlzl4phaTksQBU6d1Fy0-94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- status: ProjectStatus" vertex="1">
+          <mxGeometry height="20" width="240" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-103" parent="dlzl4phaTksQBU6d1Fy0-94" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- createdAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="240" y="182" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-104" parent="dlzl4phaTksQBU6d1Fy0-94" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="240" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-105" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&lt;b&gt;UatResponse&lt;/b&gt;" vertex="1">
+          <mxGeometry height="150" width="230" x="1455" y="913" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-106" parent="dlzl4phaTksQBU6d1Fy0-105" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-107" parent="dlzl4phaTksQBU6d1Fy0-105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- id: UUID" vertex="1">
+          <mxGeometry height="20" width="230" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-108" parent="dlzl4phaTksQBU6d1Fy0-105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- peran: String" vertex="1">
+          <mxGeometry height="20" width="230" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-109" parent="dlzl4phaTksQBU6d1Fy0-105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- answers: JSON" vertex="1">
+          <mxGeometry height="20" width="230" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-110" parent="dlzl4phaTksQBU6d1Fy0-105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- saran: String" vertex="1">
+          <mxGeometry height="20" width="230" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-111" parent="dlzl4phaTksQBU6d1Fy0-105" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- createdAt: DateTime" vertex="1">
+          <mxGeometry height="20" width="230" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-112" parent="dlzl4phaTksQBU6d1Fy0-105" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-113" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&amp;laquo;service&amp;raquo;&lt;br&gt;&lt;b&gt;AuthService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="260" x="415" y="1213" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-114" parent="dlzl4phaTksQBU6d1Fy0-113" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-115" parent="dlzl4phaTksQBU6d1Fy0-113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- currentUser: User" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-116" parent="dlzl4phaTksQBU6d1Fy0-113" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-117" parent="dlzl4phaTksQBU6d1Fy0-113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ register(data): User" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-118" parent="dlzl4phaTksQBU6d1Fy0-113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ login(email, pass): Session" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-119" parent="dlzl4phaTksQBU6d1Fy0-113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ getCurrentUser(): User" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-120" parent="dlzl4phaTksQBU6d1Fy0-113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ checkAccess(role, perm): Boolean" vertex="1">
+          <mxGeometry height="20" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-121" parent="dlzl4phaTksQBU6d1Fy0-113" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ verifyUser(userId): void" vertex="1">
+          <mxGeometry height="20" width="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-122" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&amp;laquo;service&amp;raquo;&lt;br&gt;&lt;b&gt;ReriService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="150" width="270" x="705" y="1213" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-123" parent="dlzl4phaTksQBU6d1Fy0-122" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-124" parent="dlzl4phaTksQBU6d1Fy0-122" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- pillarWeights: Map" vertex="1">
+          <mxGeometry height="20" width="270" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-125" parent="dlzl4phaTksQBU6d1Fy0-122" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-126" parent="dlzl4phaTksQBU6d1Fy0-122" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ calculateReri(pillars): Double" vertex="1">
+          <mxGeometry height="20" width="270" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-127" parent="dlzl4phaTksQBU6d1Fy0-122" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ categorize(score): ReriCategory" vertex="1">
+          <mxGeometry height="20" width="270" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-128" parent="dlzl4phaTksQBU6d1Fy0-122" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ normalizeIndicator(val): Double" vertex="1">
+          <mxGeometry height="20" width="270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-129" parent="dlzl4phaTksQBU6d1Fy0-122" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ recomputeScore(daerahId): ReriScore" vertex="1">
+          <mxGeometry height="20" width="270" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-130" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&amp;laquo;service&amp;raquo;&lt;br&gt;&lt;b&gt;ClusteringService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="150" width="270" x="1005" y="1213" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-131" parent="dlzl4phaTksQBU6d1Fy0-130" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-132" parent="dlzl4phaTksQBU6d1Fy0-130" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kRange: Integer[]" vertex="1">
+          <mxGeometry height="20" width="270" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-133" parent="dlzl4phaTksQBU6d1Fy0-130" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-134" parent="dlzl4phaTksQBU6d1Fy0-130" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ runKMeans(k): DaerahCluster[]" vertex="1">
+          <mxGeometry height="20" width="270" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-135" parent="dlzl4phaTksQBU6d1Fy0-130" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ silhouetteScore(labels): Double" vertex="1">
+          <mxGeometry height="20" width="270" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-136" parent="dlzl4phaTksQBU6d1Fy0-130" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ determineOptimalK(): Integer" vertex="1">
+          <mxGeometry height="20" width="270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-137" parent="dlzl4phaTksQBU6d1Fy0-130" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ standardize(data): Double[]" vertex="1">
+          <mxGeometry height="20" width="270" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-138" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&amp;laquo;service&amp;raquo;&lt;br&gt;&lt;b&gt;InsightService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="130" width="260" x="1305" y="1213" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-139" parent="dlzl4phaTksQBU6d1Fy0-138" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-140" parent="dlzl4phaTksQBU6d1Fy0-138" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- model: String" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-141" parent="dlzl4phaTksQBU6d1Fy0-138" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-142" parent="dlzl4phaTksQBU6d1Fy0-138" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ generateInsight(daerah): DaerahInsight" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-143" parent="dlzl4phaTksQBU6d1Fy0-138" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ buildPrompt(daerah): String" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-144" parent="dlzl4phaTksQBU6d1Fy0-138" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ saveInsight(insight): void" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-145" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="&amp;laquo;service&amp;raquo;&lt;br&gt;&lt;b&gt;RecommendationService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="130" width="270" x="1305" y="1453" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-146" parent="dlzl4phaTksQBU6d1Fy0-145" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-147" parent="dlzl4phaTksQBU6d1Fy0-145" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- membershipFn: Function" vertex="1">
+          <mxGeometry height="20" width="270" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-148" parent="dlzl4phaTksQBU6d1Fy0-145" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-149" parent="dlzl4phaTksQBU6d1Fy0-145" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ generateRecommendations(pillars): Rekomendasi[]" vertex="1">
+          <mxGeometry height="20" width="270" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-150" parent="dlzl4phaTksQBU6d1Fy0-145" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ computeUrgency(score, weight): Double" vertex="1">
+          <mxGeometry height="20" width="270" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-151" parent="dlzl4phaTksQBU6d1Fy0-145" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ mapHorizon(urgency): Horizon" vertex="1">
+          <mxGeometry height="20" width="270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-152" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="dlzl4phaTksQBU6d1Fy0-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-153" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-152" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-154" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-152" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-155" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="dlzl4phaTksQBU6d1Fy0-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-156" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-155" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-157" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-155" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-158" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="dlzl4phaTksQBU6d1Fy0-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-159" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-158" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-160" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-158" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-161" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="dlzl4phaTksQBU6d1Fy0-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-162" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-161" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-163" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-161" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-164" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="dlzl4phaTksQBU6d1Fy0-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-165" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-164" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-166" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-164" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-167" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="dlzl4phaTksQBU6d1Fy0-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-168" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-167" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-169" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-167" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-170" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="dlzl4phaTksQBU6d1Fy0-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-171" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-170" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-172" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-170" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-173" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-31" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="dlzl4phaTksQBU6d1Fy0-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-174" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-173" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-175" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-173" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-176" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-82" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=none;" target="dlzl4phaTksQBU6d1Fy0-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-177" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-176" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-178" connectable="0" parent="dlzl4phaTksQBU6d1Fy0-176" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.7" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-179" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-113" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="dlzl4phaTksQBU6d1Fy0-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-180" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-122" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="dlzl4phaTksQBU6d1Fy0-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-181" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-122" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="dlzl4phaTksQBU6d1Fy0-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-182" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-130" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="dlzl4phaTksQBU6d1Fy0-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-183" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-138" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="dlzl4phaTksQBU6d1Fy0-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dlzl4phaTksQBU6d1Fy0-184" edge="1" parent="1" source="dlzl4phaTksQBU6d1Fy0-145" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=none;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;dashed=1;endArrow=open;" target="dlzl4phaTksQBU6d1Fy0-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
