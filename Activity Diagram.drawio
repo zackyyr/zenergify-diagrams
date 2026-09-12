@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="2">
   <diagram id="lkbu8CRMxfAj0q2ud_Fa" name="Register - Login">
-    <mxGraphModel dx="1502" dy="1143" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1287" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,7 +14,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="c-fGuFflQG-d2UpDduxE-18" parent="c-fGuFflQG-d2UpDduxE-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;arcSize=40;" value="Show error message&amp;nbsp;" vertex="1">
-          <mxGeometry height="60" width="150" x="85" y="775" as="geometry" />
+          <mxGeometry height="60" width="150" x="85" y="727" as="geometry" />
         </mxCell>
         <mxCell id="c-fGuFflQG-d2UpDduxE-21" parent="c-fGuFflQG-d2UpDduxE-1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=12;fontColor=#000000;" value="Role?" vertex="1">
           <mxGeometry height="70" width="140" x="115" y="1077" as="geometry" />
