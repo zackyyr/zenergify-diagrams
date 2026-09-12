@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="2">
   <diagram name="Class Diagram" id="class_diagram">
-    <mxGraphModel dx="3800" dy="2324" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="1320" math="0" shadow="0">
+    <mxGraphModel dx="2625" dy="1822" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="1320" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -475,7 +475,7 @@
         </mxCell>
         <mxCell id="L156" connectable="0" parent="E155" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
           <mxGeometry relative="1" x="-0.7" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="5" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="L157" connectable="0" parent="E155" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
@@ -540,7 +540,7 @@
         </mxCell>
         <mxCell id="L171" connectable="0" parent="E170" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="1" vertex="1">
           <mxGeometry relative="1" x="-0.7" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-18" y="-4" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="L172" connectable="0" parent="E170" style="edgeLabel;html=1;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;" value="*" vertex="1">
