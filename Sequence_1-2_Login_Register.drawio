@@ -1,0 +1,968 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="6">
+  <diagram name="1. Authentication (Login)" id="1._Authentication_(Login)">
+    <mxGraphModel dx="1645" dy="703" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="760" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AC1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelPosition=center;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="User" vertex="1">
+          <mxGeometry height="60" width="30" x="135" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LL2" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="100" as="sourcePoint" />
+            <mxPoint x="150" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="LoginPage" vertex="1">
+          <mxGeometry height="40" width="140" x="290" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL4" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="85" as="sourcePoint" />
+            <mxPoint x="360" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="AuthService" vertex="1">
+          <mxGeometry height="40" width="140" x="520" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL6" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="85" as="sourcePoint" />
+            <mxPoint x="590" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="UserRepository" vertex="1">
+          <mxGeometry height="40" width="140" x="750" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL8" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="85" as="sourcePoint" />
+            <mxPoint x="820" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value=":Database" vertex="1">
+          <mxGeometry height="40" width="140" x="980" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL10" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="85" as="sourcePoint" />
+            <mxPoint x="1050" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M11" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="submit(email, password)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="150" as="sourcePoint" />
+            <mxPoint x="360" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M12" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="login(email, password)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="186" as="sourcePoint" />
+            <mxPoint x="590" y="186" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M13" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="findByEmail(email)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="222" as="sourcePoint" />
+            <mxPoint x="820" y="222" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M14" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="SELECT * FROM users">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="258" as="sourcePoint" />
+            <mxPoint x="1050" y="258" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M15" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="userRecord">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="294" as="sourcePoint" />
+            <mxPoint x="820" y="294" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M16" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="user">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="330" as="sourcePoint" />
+            <mxPoint x="590" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M17" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;edgeStyle=orthogonalEdgeStyle;" value="verifyCredentials()">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="366" />
+              <mxPoint x="660" y="394" />
+            </Array>
+            <mxPoint x="590" y="366" as="sourcePoint" />
+            <mxPoint x="590" y="394" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M18" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="getRole(userId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="408" as="sourcePoint" />
+            <mxPoint x="820" y="408" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M19" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="SELECT role">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="444" as="sourcePoint" />
+            <mxPoint x="1050" y="444" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M20" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="role">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="480" as="sourcePoint" />
+            <mxPoint x="590" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M21" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="session + role">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="516" as="sourcePoint" />
+            <mxPoint x="360" y="516" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M22" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="redirect to role dashboard">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="552" as="sourcePoint" />
+            <mxPoint x="150" y="552" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="2. Registration" id="2._Registration">
+    <mxGraphModel dx="1828" dy="781" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="780" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AC1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelPosition=center;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="User" vertex="1">
+          <mxGeometry height="60" width="30" x="135" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LL2" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="100" as="sourcePoint" />
+            <mxPoint x="150" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="RegisterPage" vertex="1">
+          <mxGeometry height="40" width="140" x="290" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL4" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="85" as="sourcePoint" />
+            <mxPoint x="360" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="AuthService" vertex="1">
+          <mxGeometry height="40" width="140" x="520" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL6" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="85" as="sourcePoint" />
+            <mxPoint x="590" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="UserRepository" vertex="1">
+          <mxGeometry height="40" width="140" x="750" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL8" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="85" as="sourcePoint" />
+            <mxPoint x="820" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value=":Database" vertex="1">
+          <mxGeometry height="40" width="140" x="980" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL10" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="85" as="sourcePoint" />
+            <mxPoint x="1050" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M11" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="fill(name, email, password)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="150" as="sourcePoint" />
+            <mxPoint x="360" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M12" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="register(data)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="186" as="sourcePoint" />
+            <mxPoint x="590" y="186" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M13" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;edgeStyle=orthogonalEdgeStyle;" value="validateInput()">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="222" />
+              <mxPoint x="660" y="250" />
+            </Array>
+            <mxPoint x="590" y="222" as="sourcePoint" />
+            <mxPoint x="590" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M14" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="existsByEmail(email)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="264" as="sourcePoint" />
+            <mxPoint x="820" y="264" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M15" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="SELECT email">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="300" as="sourcePoint" />
+            <mxPoint x="1050" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M16" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="result">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="336" as="sourcePoint" />
+            <mxPoint x="820" y="336" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M17" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="emailAvailable">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="372" as="sourcePoint" />
+            <mxPoint x="590" y="372" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M18" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="createUser(role=public, status=pending)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="408" as="sourcePoint" />
+            <mxPoint x="820" y="408" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M19" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="INSERT INTO users">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="444" as="sourcePoint" />
+            <mxPoint x="1050" y="444" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M20" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="newUser">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="480" as="sourcePoint" />
+            <mxPoint x="820" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M21" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="user">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="516" as="sourcePoint" />
+            <mxPoint x="590" y="516" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M22" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="account created">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="552" as="sourcePoint" />
+            <mxPoint x="360" y="552" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M23" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="proceed to onboarding">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="588" as="sourcePoint" />
+            <mxPoint x="150" y="588" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="3. Onboarding" id="Hcz0ki_NwozxiOHir4Li">
+    <mxGraphModel dx="940" dy="402" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1220" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AC1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelPosition=center;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="User" vertex="1">
+          <mxGeometry height="60" width="30" x="135" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LL2" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="100" as="sourcePoint" />
+            <mxPoint x="150" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="OnboardingPage" vertex="1">
+          <mxGeometry height="40" width="140" x="300" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL4" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="85" as="sourcePoint" />
+            <mxPoint x="370" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="AuthService" vertex="1">
+          <mxGeometry height="40" width="140" x="530" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL6" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="85" as="sourcePoint" />
+            <mxPoint x="600" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="UserRepository" vertex="1">
+          <mxGeometry height="40" width="140" x="760" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL8" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="85" as="sourcePoint" />
+            <mxPoint x="830" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value=":Database" vertex="1">
+          <mxGeometry height="40" width="140" x="990" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL10" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060" y="85" as="sourcePoint" />
+            <mxPoint x="1060" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M11" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="open onboarding">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="150" as="sourcePoint" />
+            <mxPoint x="370" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M12" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="getRoleForm()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="186" as="sourcePoint" />
+            <mxPoint x="600" y="186" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M13" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="role-specific form">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="222" as="sourcePoint" />
+            <mxPoint x="370" y="222" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DV16" parent="1" style="line;strokeWidth=1;strokeColor=#000000;dashed=1;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="740" x="120" y="326" as="geometry" />
+        </mxCell>
+        <mxCell id="M18" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="fill Pemda form (select region, institution)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="292" as="sourcePoint" />
+            <mxPoint x="370" y="292" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M19" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="fill Investor form (preferences)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="354" as="sourcePoint" />
+            <mxPoint x="370" y="354" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M20" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="submitOnboarding(data)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="408" as="sourcePoint" />
+            <mxPoint x="600" y="408" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M21" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;edgeStyle=orthogonalEdgeStyle;" value="validateForm()">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="444" />
+              <mxPoint x="670" y="472" />
+            </Array>
+            <mxPoint x="600" y="444" as="sourcePoint" />
+            <mxPoint x="600" y="472" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M22" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="saveOnboarding(userId, data, daerahId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="486" as="sourcePoint" />
+            <mxPoint x="830" y="486" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M23" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="UPDATE users SET onboarding_data, daerah_id">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="522" as="sourcePoint" />
+            <mxPoint x="1060" y="522" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M24" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="ok">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060" y="558" as="sourcePoint" />
+            <mxPoint x="830" y="558" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M25" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="status: pending verification">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="594" as="sourcePoint" />
+            <mxPoint x="370" y="594" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M26" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="show confirmation">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="630" as="sourcePoint" />
+            <mxPoint x="150" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QaxAZhEu_G1LLEamNk36-1" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="132" width="715" x="115" y="257" as="geometry" />
+        </mxCell>
+        <mxCell id="ALT14" parent="QaxAZhEu_G1LLEamNk36-1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;width=44;height=22;align=left;verticalAlign=top;" value="alt" vertex="1">
+          <mxGeometry height="132" width="715" as="geometry" />
+        </mxCell>
+        <mxCell id="CD15" parent="QaxAZhEu_G1LLEamNk36-1" style="text;html=1;align=left;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;fontStyle=2;" value="[role = Regional Government]" vertex="1">
+          <mxGeometry height="18" width="660.8918918918919" x="48.31081081081081" y="2" as="geometry" />
+        </mxCell>
+        <mxCell id="CD217" parent="QaxAZhEu_G1LLEamNk36-1" style="text;html=1;align=left;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;fontStyle=2;" value="[role = Investor]" vertex="1">
+          <mxGeometry height="18" width="703.4054054054053" x="7.729729729729729" y="66" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="4. Verify Account" id="-pjibQ7ME3V0Z12OUceI">
+    <mxGraphModel dx="1219" dy="521" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1220" pageHeight="880" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AC1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelPosition=center;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="Administrator" vertex="1">
+          <mxGeometry height="60" width="30" x="135" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LL2" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="100" as="sourcePoint" />
+            <mxPoint x="150" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="UserMgmtPage" vertex="1">
+          <mxGeometry height="40" width="140" x="300" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL4" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="85" as="sourcePoint" />
+            <mxPoint x="370" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="AuthService" vertex="1">
+          <mxGeometry height="40" width="140" x="530" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL6" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="85" as="sourcePoint" />
+            <mxPoint x="600" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="UserRepository" vertex="1">
+          <mxGeometry height="40" width="140" x="760" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL8" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="85" as="sourcePoint" />
+            <mxPoint x="830" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OB9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value=":Database" vertex="1">
+          <mxGeometry height="40" width="140" x="990" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LL10" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060" y="85" as="sourcePoint" />
+            <mxPoint x="1060" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M11" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="open user management">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="150" as="sourcePoint" />
+            <mxPoint x="370" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M12" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="findPendingUsers()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="186" as="sourcePoint" />
+            <mxPoint x="830" y="186" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M13" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="SELECT WHERE status=&#39;pending&#39;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="222" as="sourcePoint" />
+            <mxPoint x="1060" y="222" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M14" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="pendingUsers">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060" y="258" as="sourcePoint" />
+            <mxPoint x="830" y="258" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M15" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="user list">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="294" as="sourcePoint" />
+            <mxPoint x="370" y="294" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M16" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="review + verify(userId, decision)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="330" as="sourcePoint" />
+            <mxPoint x="370" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M17" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="verifyUser(userId, decision)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="366" as="sourcePoint" />
+            <mxPoint x="600" y="366" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ALT18" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;width=44;height=22;align=left;verticalAlign=top;" value="alt" vertex="1">
+          <mxGeometry height="132" width="750" x="330" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="CD19" parent="1" style="text;html=1;align=left;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;fontStyle=2;" value="[approved]" vertex="1">
+          <mxGeometry height="18" width="694" x="380" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="DV20" parent="1" style="line;strokeWidth=1;strokeColor=#000000;dashed=1;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="750" x="330" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="CD221" parent="1" style="text;html=1;align=left;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;fontStyle=2;" value="[rejected]" vertex="1">
+          <mxGeometry height="18" width="738" x="338" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="M22" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="updateStatus(userId, active)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="436" as="sourcePoint" />
+            <mxPoint x="830" y="436" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M23" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="updateStatus(userId, suspended)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="498" as="sourcePoint" />
+            <mxPoint x="830" y="498" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M24" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="UPDATE users SET status">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="552" as="sourcePoint" />
+            <mxPoint x="1060" y="552" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M25" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="ok">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060" y="588" as="sourcePoint" />
+            <mxPoint x="830" y="588" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M26" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="account verified">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="624" as="sourcePoint" />
+            <mxPoint x="370" y="624" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M27" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="show updated status">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="660" as="sourcePoint" />
+            <mxPoint x="150" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="OeztgRzOkv5MKlxtatQk" name="5. View Region Detail">
+    <mxGraphModel dx="2785" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelPosition=center;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="Public" vertex="1">
+          <mxGeometry height="60" width="30" x="-710" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-2" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-695" y="122" as="sourcePoint" />
+            <mxPoint x="-695" y="1032" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="RegionPage" vertex="1">
+          <mxGeometry height="40" width="140" x="-575" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-4" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="107" as="sourcePoint" />
+            <mxPoint x="-505" y="1032" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="ReriService" vertex="1">
+          <mxGeometry height="40" width="140" x="-375" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-6" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-305" y="107" as="sourcePoint" />
+            <mxPoint x="-305" y="1032" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="InsightService" vertex="1">
+          <mxGeometry height="40" width="140" x="-155" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-8" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-85" y="107" as="sourcePoint" />
+            <mxPoint x="-85" y="1032" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="RecommendationService" vertex="1">
+          <mxGeometry height="40" width="140" x="65" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-10" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="107" as="sourcePoint" />
+            <mxPoint x="135" y="1032" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="Repository" vertex="1">
+          <mxGeometry height="40" width="140" x="285" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-12" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="107" as="sourcePoint" />
+            <mxPoint x="355" y="1032" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value=":Database" vertex="1">
+          <mxGeometry height="40" width="140" x="485" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-14" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="555" y="107" as="sourcePoint" />
+            <mxPoint x="555" y="1032" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-15" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="open region detail(slug)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-695" y="177" as="sourcePoint" />
+            <mxPoint x="-505" y="177" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-16" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="getRegionScore(daerahId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="213" as="sourcePoint" />
+            <mxPoint x="-305" y="213" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-17" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="findScoreAndCluster(daerahId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-305" y="249" as="sourcePoint" />
+            <mxPoint x="355" y="249" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-18" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="SELECT reri_scores, daerah_clusters">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="285" as="sourcePoint" />
+            <mxPoint x="555" y="285" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-19" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="score, pillars, cluster">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="555" y="321" as="sourcePoint" />
+            <mxPoint x="355" y="321" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-20" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="data">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="357" as="sourcePoint" />
+            <mxPoint x="-305" y="357" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-21" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="regionScore">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-305" y="393" as="sourcePoint" />
+            <mxPoint x="-505" y="393" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-22" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;width=44;height=22;align=left;verticalAlign=top;" value="alt" vertex="1">
+          <mxGeometry height="204" width="1108" x="-533" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-23" parent="1" style="text;html=1;align=left;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;fontStyle=2;" value="[insight not exists]" vertex="1">
+          <mxGeometry height="18" width="1064" x="-495" y="437" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-24" parent="1" style="line;strokeWidth=1;strokeColor=#000000;dashed=1;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="1055" x="-505" y="569" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-25" parent="1" style="text;html=1;align=left;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;fontStyle=2;" value="[insight exists]" vertex="1">
+          <mxGeometry height="18" width="1108" x="-505" y="577" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-26" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="generateInsight(region)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="463" as="sourcePoint" />
+            <mxPoint x="-85" y="463" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-27" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="call LLM (Groq) + INSERT daerah_insights">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-85" y="499" as="sourcePoint" />
+            <mxPoint x="555" y="499" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-28" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="insight">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-85" y="535" as="sourcePoint" />
+            <mxPoint x="-505" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-29" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="getInsight(daerahId)  [read cache]">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="597" as="sourcePoint" />
+            <mxPoint x="-85" y="597" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-30" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="getRecommendations(daerahId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="651" as="sourcePoint" />
+            <mxPoint x="135" y="651" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-31" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="findRecommendations(daerahId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="687" as="sourcePoint" />
+            <mxPoint x="355" y="687" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-32" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="SELECT rekomendasi">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="723" as="sourcePoint" />
+            <mxPoint x="555" y="723" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-33" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="recommendations">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="555" y="759" as="sourcePoint" />
+            <mxPoint x="135" y="759" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-34" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="recommendations">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="795" as="sourcePoint" />
+            <mxPoint x="-505" y="795" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-35" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="&lt;font style=&quot;font-size: 7px;&quot;&gt;display detail&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 7px;&quot;&gt;(score, radar, category, insight, recs, cluster)&lt;/font&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0105" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="-506" y="830" as="sourcePoint" />
+            <mxPoint x="-696" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-36" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;width=44;height=22;align=left;verticalAlign=top;" value="alt" vertex="1">
+          <mxGeometry height="168" width="1120" x="-545" y="871" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-37" parent="1" style="text;html=1;align=left;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;fontStyle=2;" value="[view 28-indicator breakdown]" vertex="1">
+          <mxGeometry height="18" width="1064" x="-495" y="873" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-38" parent="1" style="line;strokeWidth=1;strokeColor=#000000;dashed=1;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="1120" x="-545" y="969" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-39" parent="1" style="text;html=1;align=left;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;fontStyle=2;" value="[otherwise]" vertex="1">
+          <mxGeometry height="18" width="1108" x="-537" y="973" as="geometry" />
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-40" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="findIndicatorValues(daerahId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="899" as="sourcePoint" />
+            <mxPoint x="355" y="899" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-41" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="SELECT indikator_nilai">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="935" as="sourcePoint" />
+            <mxPoint x="555" y="935" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Fl5fG6ceA8jmcsprcfRh-42" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="end">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-505" y="997" as="sourcePoint" />
+            <mxPoint x="-695" y="997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Dfxn5qYvmMER0YG--T_d" name="6. View Dashboard">
+    <mxGraphModel dx="1645" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;labelPosition=center;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="Regional Gov" vertex="1">
+          <mxGeometry height="60" width="30" x="140" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-2" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="130" as="sourcePoint" />
+            <mxPoint x="155" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="DashboardPage" vertex="1">
+          <mxGeometry height="40" width="140" x="295" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-4" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="115" as="sourcePoint" />
+            <mxPoint x="365" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="AuthService" vertex="1">
+          <mxGeometry height="40" width="140" x="515" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-6" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="585" y="115" as="sourcePoint" />
+            <mxPoint x="585" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="ReriService" vertex="1">
+          <mxGeometry height="40" width="140" x="745" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-8" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815" y="115" as="sourcePoint" />
+            <mxPoint x="815" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="Repository" vertex="1">
+          <mxGeometry height="40" width="140" x="965" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-10" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="115" as="sourcePoint" />
+            <mxPoint x="1035" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value=":Database" vertex="1">
+          <mxGeometry height="40" width="140" x="1185" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-12" edge="1" parent="1" style="html=1;points=[];endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1255" y="115" as="sourcePoint" />
+            <mxPoint x="1255" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-13" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="open dashboard">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="185" as="sourcePoint" />
+            <mxPoint x="365" y="185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-14" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="getCurrentUser()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="221" as="sourcePoint" />
+            <mxPoint x="585" y="221" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-15" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="user (daerahId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="585" y="257" as="sourcePoint" />
+            <mxPoint x="365" y="257" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-16" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="getDashboard(daerahId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="293" as="sourcePoint" />
+            <mxPoint x="815" y="293" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-17" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="findScore(daerahId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815" y="329" as="sourcePoint" />
+            <mxPoint x="1035" y="329" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-18" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="SELECT reri_scores">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="365" as="sourcePoint" />
+            <mxPoint x="1255" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-19" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="score, pillars, rank">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1255" y="401" as="sourcePoint" />
+            <mxPoint x="815" y="401" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-20" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="findInsightAndRecs(daerahId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815" y="437" as="sourcePoint" />
+            <mxPoint x="1035" y="437" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-21" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="SELECT daerah_insights, rekomendasi">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="473" as="sourcePoint" />
+            <mxPoint x="1255" y="473" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-22" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="insight, recommendations">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1255" y="509" as="sourcePoint" />
+            <mxPoint x="815" y="509" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-23" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="findClusterAndPeers(daerahId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815" y="545" as="sourcePoint" />
+            <mxPoint x="1035" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-24" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="SELECT daerah_clusters">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="581" as="sourcePoint" />
+            <mxPoint x="1255" y="581" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-25" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="cluster, peers">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1255" y="617" as="sourcePoint" />
+            <mxPoint x="815" y="617" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-26" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;edgeStyle=orthogonalEdgeStyle;" value="computePillarGap(peers)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="885" y="653" />
+              <mxPoint x="885" y="681" />
+            </Array>
+            <mxPoint x="815" y="653" as="sourcePoint" />
+            <mxPoint x="815" y="681" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-27" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="dashboardData">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="815" y="695" as="sourcePoint" />
+            <mxPoint x="365" y="695" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-28" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;display dashboard&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;(score, radar, pillar gap, recs, cluster)&lt;/font&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" y="-1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="365" y="731" as="sourcePoint" />
+            <mxPoint x="155" y="731" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-29" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;width=44;height=22;align=left;verticalAlign=top;" value="alt" vertex="1">
+          <mxGeometry height="177" width="938" x="337" y="773" as="geometry" />
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-30" parent="1" style="text;html=1;align=left;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;fontStyle=2;" value="[compare with another region]" vertex="1">
+          <mxGeometry height="18" width="894" x="375" y="775" as="geometry" />
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-31" parent="1" style="line;strokeWidth=1;strokeColor=#000000;dashed=1;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="894" x="360" y="904" as="geometry" />
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-32" parent="1" style="text;html=1;align=left;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;fontStyle=2;" value="[otherwise]" vertex="1">
+          <mxGeometry height="18" width="938" x="367" y="875" as="geometry" />
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-33" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="selectComparison(regionId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="801" as="sourcePoint" />
+            <mxPoint x="365" y="801" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-34" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="findScore(regionId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="837" as="sourcePoint" />
+            <mxPoint x="1035" y="837" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-35" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=block;align=center;" value="SELECT reri_scores">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="873" as="sourcePoint" />
+            <mxPoint x="1255" y="873" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iA9ZSW2i04aaRmt7AnXI-36" edge="1" parent="1" style="html=1;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontSize=10;fontColor=#000000;endArrow=open;dashed=1;align=center;" value="end">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="363" y="907.6" as="sourcePoint" />
+            <mxPoint x="153" y="907.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
