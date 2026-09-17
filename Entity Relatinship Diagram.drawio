@@ -385,6 +385,364 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-126" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Plus Jakarta Sans;fontSize=22;fontStyle=1;fontColor=#1F4842;" value="ERD Zenergify — RERI (revisi)" vertex="1">
+          <mxGeometry height="40" width="480" x="518" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-127" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="daerah" vertex="1">
+          <mxGeometry height="414" width="270" x="1408" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-128" parent="Kf-jILa_GIuDkWgZQICh-127" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="daerah" vertex="1">
+          <mxGeometry height="34" width="270" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-129" parent="Kf-jILa_GIuDkWgZQICh-127" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;/u&gt; : uuid" vertex="1">
+          <mxGeometry height="34" width="270" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-130" parent="Kf-jILa_GIuDkWgZQICh-127" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="nama : varchar NOT NULL" vertex="1">
+          <mxGeometry height="34" width="270" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-131" parent="Kf-jILa_GIuDkWgZQICh-127" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="kode_bps : varchar UNIQUE" vertex="1">
+          <mxGeometry height="34" width="270" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-132" parent="Kf-jILa_GIuDkWgZQICh-127" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="slug : varchar UNIQUE" vertex="1">
+          <mxGeometry height="34" width="270" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-133" parent="Kf-jILa_GIuDkWgZQICh-127" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="tipe : daerah_tipe" vertex="1">
+          <mxGeometry height="34" width="270" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-134" parent="Kf-jILa_GIuDkWgZQICh-127" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="FK provinsi_id : uuid&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;→ daerah.id; null utk provinsi&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="270" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-135" parent="Kf-jILa_GIuDkWgZQICh-127" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="latitude : decimal(9,6)" vertex="1">
+          <mxGeometry height="34" width="270" y="278" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-136" parent="Kf-jILa_GIuDkWgZQICh-127" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="longitude : decimal(9,6)" vertex="1">
+          <mxGeometry height="34" width="270" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-137" parent="Kf-jILa_GIuDkWgZQICh-127" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="populasi : integer" vertex="1">
+          <mxGeometry height="34" width="270" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-138" parent="Kf-jILa_GIuDkWgZQICh-127" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="created_at : timestamptz" vertex="1">
+          <mxGeometry height="34" width="270" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-139" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="users" vertex="1">
+          <mxGeometry height="300" width="260" x="2540" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-140" parent="Kf-jILa_GIuDkWgZQICh-139" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="users" vertex="1">
+          <mxGeometry height="34" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-141" parent="Kf-jILa_GIuDkWgZQICh-139" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;/u&gt; : uuid&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;ref auth.users&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="260" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-142" parent="Kf-jILa_GIuDkWgZQICh-139" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="nama : varchar" vertex="1">
+          <mxGeometry height="32" width="260" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-143" parent="Kf-jILa_GIuDkWgZQICh-139" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="email : varchar UNIQUE" vertex="1">
+          <mxGeometry height="32" width="260" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-144" parent="Kf-jILa_GIuDkWgZQICh-139" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="role : user_role" vertex="1">
+          <mxGeometry height="32" width="260" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-145" parent="Kf-jILa_GIuDkWgZQICh-139" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="status : user_status" vertex="1">
+          <mxGeometry height="32" width="260" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-146" parent="Kf-jILa_GIuDkWgZQICh-139" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="onboarding_data : jsonb" vertex="1">
+          <mxGeometry height="32" width="260" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-147" parent="Kf-jILa_GIuDkWgZQICh-139" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="created_at : timestamptz" vertex="1">
+          <mxGeometry height="32" width="260" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-148" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="Administrator" vertex="1">
+          <mxGeometry height="140" width="220" x="2240" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-149" parent="Kf-jILa_GIuDkWgZQICh-148" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="Administrator" vertex="1">
+          <mxGeometry height="34" width="220" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-150" parent="Kf-jILa_GIuDkWgZQICh-148" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;/u&gt; : uuid" vertex="1">
+          <mxGeometry height="32" width="220" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-151" parent="Kf-jILa_GIuDkWgZQICh-148" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="provinsi : varchar&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;cakupan; null utk nasional&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-152" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="RegionalGovernment" vertex="1">
+          <mxGeometry height="140" width="240" x="2550" y="1144" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-153" parent="Kf-jILa_GIuDkWgZQICh-152" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="RegionalGovernment" vertex="1">
+          <mxGeometry height="34" width="240" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-154" parent="Kf-jILa_GIuDkWgZQICh-152" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;/u&gt; : uuid" vertex="1">
+          <mxGeometry height="32" width="240" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-155" parent="Kf-jILa_GIuDkWgZQICh-152" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="FK daerah_id : uuid&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;→ daerah.id (mengelola)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="240" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-156" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="Investor" vertex="1">
+          <mxGeometry height="132" width="220" x="2890" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-157" parent="Kf-jILa_GIuDkWgZQICh-156" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="Investor" vertex="1">
+          <mxGeometry height="34" width="220" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-158" parent="Kf-jILa_GIuDkWgZQICh-156" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;/u&gt; : uuid" vertex="1">
+          <mxGeometry height="32" width="220" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-159" parent="Kf-jILa_GIuDkWgZQICh-156" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="preferensi : jsonb" vertex="1">
+          <mxGeometry height="32" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-160" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="reri_scores" vertex="1">
+          <mxGeometry height="492" width="300" x="1038" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-161" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="reri_scores" vertex="1">
+          <mxGeometry height="34" width="300" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-162" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;/u&gt; : uuid" vertex="1">
+          <mxGeometry height="32" width="300" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-163" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="FK daerah_id : uuid UNIQUE&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;1:1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-164" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="renewable_energy_adoption : decimal(5,2) [30%]" vertex="1">
+          <mxGeometry height="32" width="300" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-165" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="energy_efficiency : decimal(5,2) [15%]" vertex="1">
+          <mxGeometry height="32" width="300" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-166" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="green_infrastructure : decimal(5,2) [15%]" vertex="1">
+          <mxGeometry height="32" width="300" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-167" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="policy_governance : decimal(5,2) [15%]" vertex="1">
+          <mxGeometry height="32" width="300" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-168" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="investment_financing : decimal(5,2) [10%]" vertex="1">
+          <mxGeometry height="32" width="300" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-169" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="innovation_smartgrid : decimal(5,2) [10%]" vertex="1">
+          <mxGeometry height="32" width="300" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-170" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="community_participation : decimal(5,2) [5%]" vertex="1">
+          <mxGeometry height="32" width="300" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-171" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="total_score : decimal(5,2)" vertex="1">
+          <mxGeometry height="32" width="300" y="364" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-172" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="category : reri_category (GENERATED)" vertex="1">
+          <mxGeometry height="32" width="300" y="396" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-173" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="rank : integer" vertex="1">
+          <mxGeometry height="32" width="300" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-174" parent="Kf-jILa_GIuDkWgZQICh-160" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="updated_at : timestamptz" vertex="1">
+          <mxGeometry height="32" width="300" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-175" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="indikator_nilai" vertex="1">
+          <mxGeometry height="252" width="270" x="1883" y="2090" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-176" parent="Kf-jILa_GIuDkWgZQICh-175" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="indikator_nilai" vertex="1">
+          <mxGeometry height="34" width="270" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-177" parent="Kf-jILa_GIuDkWgZQICh-175" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;/u&gt; : uuid" vertex="1">
+          <mxGeometry height="32" width="270" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-178" parent="Kf-jILa_GIuDkWgZQICh-175" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="FK daerah_id : uuid" vertex="1">
+          <mxGeometry height="32" width="270" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-179" parent="Kf-jILa_GIuDkWgZQICh-175" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="FK indikator_kode : varchar&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;→ indikator.kode&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="270" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-180" parent="Kf-jILa_GIuDkWgZQICh-175" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="nilai_mentah : decimal&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;satuan asli&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="270" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-181" parent="Kf-jILa_GIuDkWgZQICh-175" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="nilai_skor : decimal&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;0-100 min-max&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="270" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-182" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="indikator" vertex="1">
+          <mxGeometry height="364" width="270" x="1398" y="2034" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-183" parent="Kf-jILa_GIuDkWgZQICh-182" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="indikator" vertex="1">
+          <mxGeometry height="34" width="270" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-184" parent="Kf-jILa_GIuDkWgZQICh-182" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK kode&lt;/b&gt;&lt;/u&gt; : varchar&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;REA1, EE1, ...&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="270" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-185" parent="Kf-jILa_GIuDkWgZQICh-182" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="pilar_kode : varchar" vertex="1">
+          <mxGeometry height="32" width="270" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-186" parent="Kf-jILa_GIuDkWgZQICh-182" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="nama : varchar" vertex="1">
+          <mxGeometry height="32" width="270" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-187" parent="Kf-jILa_GIuDkWgZQICh-182" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="satuan : varchar" vertex="1">
+          <mxGeometry height="32" width="270" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-188" parent="Kf-jILa_GIuDkWgZQICh-182" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="arah : varchar" vertex="1">
+          <mxGeometry height="32" width="270" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-189" parent="Kf-jILa_GIuDkWgZQICh-182" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="bobot_dalam_pilar : decimal (0.25)" vertex="1">
+          <mxGeometry height="32" width="270" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-190" parent="Kf-jILa_GIuDkWgZQICh-182" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="bobot_pilar : decimal" vertex="1">
+          <mxGeometry height="32" width="270" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-191" parent="Kf-jILa_GIuDkWgZQICh-182" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="kolom_sumber : varchar" vertex="1">
+          <mxGeometry height="32" width="270" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-192" parent="Kf-jILa_GIuDkWgZQICh-182" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="urutan : integer" vertex="1">
+          <mxGeometry height="32" width="270" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-193" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="daerah_clusters" vertex="1">
+          <mxGeometry height="268" width="260" x="738" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-194" parent="Kf-jILa_GIuDkWgZQICh-193" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="daerah_clusters" vertex="1">
+          <mxGeometry height="34" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-195" parent="Kf-jILa_GIuDkWgZQICh-193" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;/u&gt; : uuid" vertex="1">
+          <mxGeometry height="32" width="260" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-196" parent="Kf-jILa_GIuDkWgZQICh-193" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="FK daerah_id : uuid UNIQUE&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;1:1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="260" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-197" parent="Kf-jILa_GIuDkWgZQICh-193" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="cluster_id : smallint" vertex="1">
+          <mxGeometry height="32" width="260" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-198" parent="Kf-jILa_GIuDkWgZQICh-193" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="cluster_label : varchar" vertex="1">
+          <mxGeometry height="32" width="260" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-199" parent="Kf-jILa_GIuDkWgZQICh-193" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="k_value : smallint" vertex="1">
+          <mxGeometry height="32" width="260" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-200" parent="Kf-jILa_GIuDkWgZQICh-193" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="computed_at : timestamptz" vertex="1">
+          <mxGeometry height="32" width="260" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-201" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="daerah_insights" vertex="1">
+          <mxGeometry height="332" width="250" x="738" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-202" parent="Kf-jILa_GIuDkWgZQICh-201" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="daerah_insights" vertex="1">
+          <mxGeometry height="34" width="250" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-203" parent="Kf-jILa_GIuDkWgZQICh-201" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;/u&gt; : uuid" vertex="1">
+          <mxGeometry height="32" width="250" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-204" parent="Kf-jILa_GIuDkWgZQICh-201" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="FK daerah_id : uuid UNIQUE&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;1:1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="250" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-205" parent="Kf-jILa_GIuDkWgZQICh-201" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="summary : text" vertex="1">
+          <mxGeometry height="32" width="250" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-206" parent="Kf-jILa_GIuDkWgZQICh-201" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="strengths : jsonb" vertex="1">
+          <mxGeometry height="32" width="250" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-207" parent="Kf-jILa_GIuDkWgZQICh-201" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="concerns : jsonb" vertex="1">
+          <mxGeometry height="32" width="250" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-208" parent="Kf-jILa_GIuDkWgZQICh-201" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="recommendations : jsonb" vertex="1">
+          <mxGeometry height="32" width="250" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-209" parent="Kf-jILa_GIuDkWgZQICh-201" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="model_used : varchar" vertex="1">
+          <mxGeometry height="32" width="250" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-210" parent="Kf-jILa_GIuDkWgZQICh-201" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="generated_at : timestamptz" vertex="1">
+          <mxGeometry height="32" width="250" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-211" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="rekomendasi" vertex="1">
+          <mxGeometry height="260" width="260" x="1418" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-212" parent="Kf-jILa_GIuDkWgZQICh-211" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="rekomendasi" vertex="1">
+          <mxGeometry height="34" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-213" parent="Kf-jILa_GIuDkWgZQICh-211" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;/u&gt; : uuid" vertex="1">
+          <mxGeometry height="32" width="260" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-214" parent="Kf-jILa_GIuDkWgZQICh-211" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="FK daerah_id : uuid" vertex="1">
+          <mxGeometry height="32" width="260" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-215" parent="Kf-jILa_GIuDkWgZQICh-211" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="nama_aksi : text NOT NULL" vertex="1">
+          <mxGeometry height="32" width="260" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-216" parent="Kf-jILa_GIuDkWgZQICh-211" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="deskripsi : text" vertex="1">
+          <mxGeometry height="32" width="260" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-217" parent="Kf-jILa_GIuDkWgZQICh-211" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="horizon : rekomendasi_horizon" vertex="1">
+          <mxGeometry height="32" width="260" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-218" parent="Kf-jILa_GIuDkWgZQICh-211" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="created_at : timestamptz" vertex="1">
+          <mxGeometry height="32" width="260" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-219" parent="1" style="shape=table;startSize=34;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontFamily=Plus Jakarta Sans;html=1;strokeColor=#1F4842;fillColor=#FFFFFF;fontColor=#1F4842;" value="proyek" vertex="1">
+          <mxGeometry height="332" width="250" x="1918" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-220" parent="Kf-jILa_GIuDkWgZQICh-219" style="shape=tableRow;horizontal=1;fillColor=#1F4842;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#FFFFFF;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="proyek" vertex="1">
+          <mxGeometry height="34" width="250" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-221" parent="Kf-jILa_GIuDkWgZQICh-219" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="&lt;u&gt;&lt;b&gt;PK id&lt;/b&gt;&lt;/u&gt; : uuid" vertex="1">
+          <mxGeometry height="32" width="250" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-222" parent="Kf-jILa_GIuDkWgZQICh-219" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="FK daerah_id : uuid" vertex="1">
+          <mxGeometry height="32" width="250" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-223" parent="Kf-jILa_GIuDkWgZQICh-219" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="FK developer_id : uuid&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;→ Investor.id&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="250" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-224" parent="Kf-jILa_GIuDkWgZQICh-219" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="nama_proyek : varchar NOT NULL" vertex="1">
+          <mxGeometry height="32" width="250" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-225" parent="Kf-jILa_GIuDkWgZQICh-219" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="jenis : varchar" vertex="1">
+          <mxGeometry height="32" width="250" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-226" parent="Kf-jILa_GIuDkWgZQICh-219" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="kapasitas : decimal" vertex="1">
+          <mxGeometry height="32" width="250" y="236" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-227" parent="Kf-jILa_GIuDkWgZQICh-219" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="status : project_status" vertex="1">
+          <mxGeometry height="32" width="250" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-228" parent="Kf-jILa_GIuDkWgZQICh-219" style="shape=tableRow;horizontal=1;fillColor=#FFFFFF;strokeColor=#1F4842;fontFamily=Plus Jakarta Sans;fontColor=#1F4842;align=left;verticalAlign=middle;spacingLeft=8;html=1;" value="created_at : timestamptz" vertex="1">
+          <mxGeometry height="32" width="250" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-236" edge="1" parent="1" source="Kf-jILa_GIuDkWgZQICh-127" style="edgeStyle=entityRelationEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#018F3D;strokeWidth=2;startArrow=ERone;endArrow=ERzeroToOne;startFill=0;endFill=0;" target="Kf-jILa_GIuDkWgZQICh-160">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-237" edge="1" parent="1" source="Kf-jILa_GIuDkWgZQICh-127" style="edgeStyle=entityRelationEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#018F3D;strokeWidth=2;startArrow=ERone;endArrow=ERzeroToOne;startFill=0;endFill=0;" target="Kf-jILa_GIuDkWgZQICh-193">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-238" edge="1" parent="1" source="Kf-jILa_GIuDkWgZQICh-127" style="edgeStyle=entityRelationEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#018F3D;strokeWidth=2;startArrow=ERone;endArrow=ERzeroToOne;startFill=0;endFill=0;" target="Kf-jILa_GIuDkWgZQICh-201">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-239" edge="1" parent="1" source="Kf-jILa_GIuDkWgZQICh-129" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#018F3D;strokeWidth=2;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="Kf-jILa_GIuDkWgZQICh-214">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-240" edge="1" parent="1" source="Kf-jILa_GIuDkWgZQICh-127" style="edgeStyle=entityRelationEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#018F3D;strokeWidth=2;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" target="Kf-jILa_GIuDkWgZQICh-219">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-241" edge="1" parent="1" style="edgeStyle=entityRelationEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#018F3D;strokeWidth=2;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Kf-jILa_GIuDkWgZQICh-178">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1678" y="1350" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-242" edge="1" parent="1" source="Kf-jILa_GIuDkWgZQICh-185" style="edgeStyle=entityRelationEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#018F3D;strokeWidth=2;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Kf-jILa_GIuDkWgZQICh-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-243" edge="1" parent="1" style="edgeStyle=entityRelationEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#018F3D;strokeWidth=2;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" target="Kf-jILa_GIuDkWgZQICh-152">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2298" y="1497.0000000000005" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-244" edge="1" parent="1" source="Kf-jILa_GIuDkWgZQICh-156" style="edgeStyle=entityRelationEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#018F3D;strokeWidth=2;startArrow=ERone;endArrow=ERmany;startFill=0;endFill=0;" target="Kf-jILa_GIuDkWgZQICh-219">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-246" edge="1" parent="1" source="Kf-jILa_GIuDkWgZQICh-148" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#1F4842;strokeWidth=2;startArrow=none;endArrow=block;endFill=0;" target="Kf-jILa_GIuDkWgZQICh-139">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2350.06" y="1120.06" />
+              <mxPoint x="2670.06" y="1120.06" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-247" edge="1" parent="1" source="Kf-jILa_GIuDkWgZQICh-152" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#1F4842;strokeWidth=2;startArrow=none;endArrow=block;endFill=0;" target="Kf-jILa_GIuDkWgZQICh-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kf-jILa_GIuDkWgZQICh-248" edge="1" parent="1" source="Kf-jILa_GIuDkWgZQICh-156" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#1F4842;strokeWidth=2;startArrow=none;endArrow=block;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Kf-jILa_GIuDkWgZQICh-147">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2670.06" y="1120.06" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
