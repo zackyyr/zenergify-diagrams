@@ -537,7 +537,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="t6kQyz_uVlJs_r7dui0R" name="v2">
-    <mxGraphModel dx="-163" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="131" dy="1129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1020,6 +1020,282 @@
         </mxCell>
         <mxCell id="BlIzWDlyOMuXlk-1cUmV-104" parent="BlIzWDlyOMuXlk-1cUmV-92" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ removeItem(): void" vertex="1">
           <mxGeometry height="20" width="240" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tSj2eLCS4cdGNIMwSw3s-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="«service»&lt;br&gt;&lt;b&gt;AuthSevice&lt;/b&gt;" vertex="1">
+          <mxGeometry height="290" width="260" x="2610" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="tSj2eLCS4cdGNIMwSw3s-2" parent="tSj2eLCS4cdGNIMwSw3s-1" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="tSj2eLCS4cdGNIMwSw3s-3" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- currentUser: User" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tSj2eLCS4cdGNIMwSw3s-4" parent="tSj2eLCS4cdGNIMwSw3s-1" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="tSj2eLCS4cdGNIMwSw3s-5" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ findByEmail(email): User" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-1" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ verifyCredentials(email,password): Boolean" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-2" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ getRole(userId): Role&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-3" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ validateInput(data): Boolean" vertex="1">
+          <mxGeometry height="20" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-4" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ existsByEmail(email): Boolean" vertex="1">
+          <mxGeometry height="20" width="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-5" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ createUser(role,status): User" vertex="1">
+          <mxGeometry height="20" width="260" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-6" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ submitOnboarding(data): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-7" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ saveOnboarding(userId,data,daerahId): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-8" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ findPendingUsers(): List&amp;lt;User&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-9" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ verifyUser(userId,decision): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-10" parent="tSj2eLCS4cdGNIMwSw3s-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ updateStatus(userId,status): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-11" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="«service»&lt;br&gt;&lt;b&gt;DashboardService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="190" width="260" x="2890" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-12" parent="JEOwY7X1SgVnU3ygnDqY-11" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-13" parent="JEOwY7X1SgVnU3ygnDqY-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- reriService: ReriService" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-14" parent="JEOwY7X1SgVnU3ygnDqY-11" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-15" parent="JEOwY7X1SgVnU3ygnDqY-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ getCurrentUser(): User" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-16" parent="JEOwY7X1SgVnU3ygnDqY-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ getDashboardDaerah(id): Dashboard" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-17" parent="JEOwY7X1SgVnU3ygnDqY-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ findScore(id): ReriScore" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-18" parent="JEOwY7X1SgVnU3ygnDqY-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ findInsightAndRecs(id): Object" vertex="1">
+          <mxGeometry height="20" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-19" parent="JEOwY7X1SgVnU3ygnDqY-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ findClusterAndPeers(id): List&amp;lt;Daerah&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-20" parent="JEOwY7X1SgVnU3ygnDqY-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ computePillarGap(peers): Object" vertex="1">
+          <mxGeometry height="20" width="260" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-26" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="«service»&lt;br&gt;&lt;b&gt;RegionService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="150" width="260" x="2890" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-27" parent="JEOwY7X1SgVnU3ygnDqY-26" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-28" parent="JEOwY7X1SgVnU3ygnDqY-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- regionRepository: Repository" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-29" parent="JEOwY7X1SgVnU3ygnDqY-26" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-30" parent="JEOwY7X1SgVnU3ygnDqY-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ getRegionScore(id): ReriScore" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-31" parent="JEOwY7X1SgVnU3ygnDqY-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ findScoreAndClusterId(id): Object" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-32" parent="JEOwY7X1SgVnU3ygnDqY-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ findIndicatorValue(id): List&amp;lt;IndicatorValue&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-33" parent="JEOwY7X1SgVnU3ygnDqY-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ getInsight(id): DaerahInsight" vertex="1">
+          <mxGeometry height="20" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-36" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="«service»&lt;br&gt;&lt;b&gt;ReriService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="260" x="2610" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-37" parent="JEOwY7X1SgVnU3ygnDqY-36" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-38" parent="JEOwY7X1SgVnU3ygnDqY-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- pillarWeights: Map" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-39" parent="JEOwY7X1SgVnU3ygnDqY-36" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-40" parent="JEOwY7X1SgVnU3ygnDqY-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ calculateReri(pillars): Double" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-41" parent="JEOwY7X1SgVnU3ygnDqY-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ normalizeIndicator(value): Double" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-42" parent="JEOwY7X1SgVnU3ygnDqY-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ saveIndicators(id,values): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-43" parent="JEOwY7X1SgVnU3ygnDqY-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ updateAndRecompute(id,values): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-44" parent="JEOwY7X1SgVnU3ygnDqY-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ deleteRecord(id): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-45" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="«service»&lt;br&gt;&lt;b&gt;ClusteringService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="230" width="260" x="2890" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-46" parent="JEOwY7X1SgVnU3ygnDqY-45" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-47" parent="JEOwY7X1SgVnU3ygnDqY-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- kRange: Integer[]" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-48" parent="JEOwY7X1SgVnU3ygnDqY-45" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-49" parent="JEOwY7X1SgVnU3ygnDqY-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ triggerClustering(): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-50" parent="JEOwY7X1SgVnU3ygnDqY-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ loadAllScores(): List&amp;lt;ReriScore&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-51" parent="JEOwY7X1SgVnU3ygnDqY-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ standardize(data): Dataset" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-52" parent="JEOwY7X1SgVnU3ygnDqY-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ runKMeans(k): Cluster[]" vertex="1">
+          <mxGeometry height="20" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-53" parent="JEOwY7X1SgVnU3ygnDqY-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ calculateInertia(): Double" vertex="1">
+          <mxGeometry height="20" width="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-54" parent="JEOwY7X1SgVnU3ygnDqY-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ silhouetteScore(labels): Double" vertex="1">
+          <mxGeometry height="20" width="260" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-55" parent="JEOwY7X1SgVnU3ygnDqY-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ determineOptimalK(): Integer" vertex="1">
+          <mxGeometry height="20" width="260" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-56" parent="JEOwY7X1SgVnU3ygnDqY-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ saveClusters(labels): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-57" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="«service»&lt;br&gt;&lt;b&gt;InsightService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="260" x="2610" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-58" parent="JEOwY7X1SgVnU3ygnDqY-57" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-59" parent="JEOwY7X1SgVnU3ygnDqY-57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="- model: String" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-60" parent="JEOwY7X1SgVnU3ygnDqY-57" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-61" parent="JEOwY7X1SgVnU3ygnDqY-57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="+ generateInsights(regions): List&amp;lt;Insight&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-62" parent="JEOwY7X1SgVnU3ygnDqY-57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ generateBatch(regions): List&amp;lt;Insight&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-63" parent="JEOwY7X1SgVnU3ygnDqY-57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ loadReriData(regions): Dataset" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-64" parent="JEOwY7X1SgVnU3ygnDqY-57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ buildPrompt(region): String" vertex="1">
+          <mxGeometry height="20" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-65" parent="JEOwY7X1SgVnU3ygnDqY-57" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ saveInsight(insight): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-66" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="«service»&lt;br&gt;&lt;b&gt;RecommendationService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="150" width="260" x="2890" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-67" parent="JEOwY7X1SgVnU3ygnDqY-66" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-68" parent="JEOwY7X1SgVnU3ygnDqY-66" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;- membershipFn: Function" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-69" parent="JEOwY7X1SgVnU3ygnDqY-66" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-70" parent="JEOwY7X1SgVnU3ygnDqY-66" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ generateRecommendations(data): List&amp;lt;Recommendation&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-71" parent="JEOwY7X1SgVnU3ygnDqY-66" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ computeUrgency(score,weight): Double" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-72" parent="JEOwY7X1SgVnU3ygnDqY-66" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ mapHorizon(urgency): Horizon" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-73" parent="JEOwY7X1SgVnU3ygnDqY-66" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ saveRecommendation(data): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-78" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="«service»&lt;br&gt;&lt;b&gt;InvestorService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="230" width="260" x="3160" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-79" parent="JEOwY7X1SgVnU3ygnDqY-78" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-80" parent="JEOwY7X1SgVnU3ygnDqY-78" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;- currentInvestor: Investor" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-81" parent="JEOwY7X1SgVnU3ygnDqY-78" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-82" parent="JEOwY7X1SgVnU3ygnDqY-78" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ openExplore(): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-83" parent="JEOwY7X1SgVnU3ygnDqY-78" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ getRankedRegions(filter,sort): List&amp;lt;Daerah&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-84" parent="JEOwY7X1SgVnU3ygnDqY-78" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ findRegions(filter,sort): List&amp;lt;Daerah&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-85" parent="JEOwY7X1SgVnU3ygnDqY-78" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ findProjects(filter): List&amp;lt;Project&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-86" parent="JEOwY7X1SgVnU3ygnDqY-78" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ getProjectDetail(id): Project" vertex="1">
+          <mxGeometry height="20" width="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-87" parent="JEOwY7X1SgVnU3ygnDqY-78" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ addToWatchlist(userId,projectId): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-88" parent="JEOwY7X1SgVnU3ygnDqY-78" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ getSaved(userId): List&amp;lt;Watchlist&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-89" parent="JEOwY7X1SgVnU3ygnDqY-78" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ removeItem(id): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-90" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Plus Jakarta Sans;fontColor=#000000;fontSize=12;verticalAlign=middle;align=center;" value="«service»&lt;br&gt;&lt;b&gt;UserManagementService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="260" x="3160" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-91" parent="JEOwY7X1SgVnU3ygnDqY-90" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-92" parent="JEOwY7X1SgVnU3ygnDqY-90" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;- adminUser: User" vertex="1">
+          <mxGeometry height="20" width="260" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-93" parent="JEOwY7X1SgVnU3ygnDqY-90" style="line;strokeWidth=1;fillColor=none;html=1;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-94" parent="JEOwY7X1SgVnU3ygnDqY-90" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ openUserManagement(): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-95" parent="JEOwY7X1SgVnU3ygnDqY-90" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ findAllUsers(): List&amp;lt;User&amp;gt;" vertex="1">
+          <mxGeometry height="20" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-96" parent="JEOwY7X1SgVnU3ygnDqY-90" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ verifyUser(userId,decision): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-97" parent="JEOwY7X1SgVnU3ygnDqY-90" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ changeRole(userId,role): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOwY7X1SgVnU3ygnDqY-98" parent="JEOwY7X1SgVnU3ygnDqY-90" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;html=1;fontFamily=Plus Jakarta Sans;fontSize=11;fontColor=#000000;" value="&lt;meta charset=&quot;utf-8&quot;&gt;+ updateRole(userId,role): Void" vertex="1">
+          <mxGeometry height="20" width="260" y="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
